@@ -1,0 +1,28 @@
+body {
+  background: url(images/backgroundcolorgrass.png);
+  font-family: arial;
+}
+
+h1 {
+  color: #ff0000;
+  text-align: center;
+}
+
+img.balloons {
+  height: 200px;
+  animation-name: slidein;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation: slidein 20s linear infinite; */
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: -20%;
+  }
+}
