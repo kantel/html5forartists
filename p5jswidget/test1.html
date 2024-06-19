@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P5.js Widget Test 1</title>
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+  </head>
+  <body>
+<script type="text/p5" data-autoplay data-preview-width="400" data-height="400">
+    let x
+    let r = 60
+    
+    function setup() {
+      createCanvas(400, 320);
+      x = -r;
+    }
+    
+    function draw() {
+      background(45, 45, 45);
+      fill(255, 212, 121)
+      ellipse(x, height/2, r, r);
+      x += 1;
+      
+      if (x >= width + r) {
+        x = -r;
+      }
+    }
+</script>
+  </body>
+</html>
